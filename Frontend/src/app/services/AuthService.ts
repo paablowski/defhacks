@@ -50,7 +50,8 @@ export function getToken() {
 export const JwtConfig: JwtModuleOptions = {
     config: {
         tokenGetter: getToken,
-        whitelistedDomains: ['localhost:8080']
+        authScheme: '',
+        whitelistedDomains: [GLOBAL.host]
     }
 }
 
